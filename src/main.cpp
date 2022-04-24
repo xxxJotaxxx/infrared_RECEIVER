@@ -18,6 +18,7 @@ void loop()
         //print the code in serial
         Serial.println(IrReceiver.decodedIRData.decodedRawData, HEX);
         delay(200);
-        IrReceiver.resume(); // Enable receiving of the next value
+        // Enable receiving of the next value
+        IrReceiver.resume(); 
      }
 }
